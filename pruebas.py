@@ -4,7 +4,8 @@ import imageio
 import matplotlib.pyplot as plt
 from funciones import *
 #%%
-img = imageio.imread("astronaut.png")
+#img = imageio.imread("astronaut.png")
+img = imageio.imread('D:/CURSADA FACULTAD 2022/PROCESAMIENTO DE IMAGENES/Tema 4/Practica 3/coffee.png')
 Y,I,Q = RGBtoYIQ(img)
 img2 = YIQtoRGB(Y,I,Q)
 plt.imshow(img)

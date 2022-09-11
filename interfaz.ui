@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
+    <width>630</width>
     <height>600</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="imgOriginal">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>300</x>
       <y>50</y>
       <width>230</width>
       <height>215</height>
@@ -26,33 +26,14 @@
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
-    <property name="text">
-     <string/>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
-    <property name="pixmap">
-     <pixmap>coffee.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="histOriginal">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>50</y>
-      <width>230</width>
-      <height>215</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>coffee.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -61,29 +42,7 @@
    <widget class="QLabel" name="imgConFiltro">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>310</y>
-      <width>230</width>
-      <height>215</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>coffee.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="histConFiltro">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
+      <x>300</x>
       <y>310</y>
       <width>230</width>
       <height>215</height>
@@ -105,8 +64,8 @@
    <widget class="QPushButton" name="cargarImagen">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>170</y>
+      <x>80</x>
+      <y>100</y>
       <width>131</width>
       <height>31</height>
      </rect>
@@ -129,9 +88,9 @@
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>270</y>
-      <width>151</width>
+      <x>50</x>
+      <y>420</y>
+      <width>201</width>
       <height>22</height>
      </rect>
     </property>
@@ -162,13 +121,55 @@
      </property>
     </item>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono ExtraBold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Imágen Real</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>390</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono ExtraBold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Seleccionar Filtro</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1000</width>
+     <width>630</width>
      <height>21</height>
     </rect>
    </property>
