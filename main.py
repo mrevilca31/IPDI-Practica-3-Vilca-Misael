@@ -1,4 +1,3 @@
-import imghdr
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication
@@ -22,7 +21,7 @@ class pantalla(QMainWindow):
     def cargarImg(self):
         global img
         ruta = QtWidgets.QFileDialog.getOpenFileName(self,'Abrir una imagen','',"Images (*.png *.bmp)")
-        img = imageio.imread(ruta[0])
+        img = imageio.imread(ruta[0])[:,:,0:3] #Para tomar cualquier imagen
         mostrarImagen(self,img)
 
     def aplicarFiltro(self):
@@ -34,9 +33,9 @@ class pantalla(QMainWindow):
             imgCuad = filtroCuadrado(img)
             mostrarResultado(self,imgCuad)
         elif opc == "Filtro Lineal a Trozos":
-            pass
+            imgLineal = filtroLinealATrozos(img)
+            mostrarResultado(self,imgLineal)
     
-
 
 def mostrarImagen(self, rgb):
     rgb = np.clip(rgb, 0, 255)

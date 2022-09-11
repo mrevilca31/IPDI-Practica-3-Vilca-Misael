@@ -22,4 +22,15 @@ plt.imshow(img3)
 plt.show()
 
 #%%
+a = np.array([1,2,3,4,5,6,7,8])
+minimo = 3
+maximo = 6
+b[Y<minimo] = 0
+b[Y>maximo] = 1
+b = np.where((a>=minimo)&(a<=maximo), 1/(maximo-minimo)*(a-minimo),a)
 
+print(b)
+
+#%%
+c = np.zeros(a.shape)
+print(c)

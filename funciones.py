@@ -53,3 +53,14 @@ def filtroCuadrado(img):
     Y_mod = np.clip(np.square(Y),0,1)
     RGB = YIQtoRGB(Y_mod,I,Q)*255
     return RGB
+
+def filtroLinealATrozos(img):
+    Y,I,Q = RGBtoYIQ(img)
+    minimo = 0.2
+    maximo = 0.8
+    Y_mod = np.zeros(Y.shape)
+    Y_mod[Y<minimo] = 0
+    Y_mod[Y>maximo] = 1
+    Y_mod = np.where((Y>=minimo)&(Y<=maximo), 1/(maximo-minimo)*(Y-minimo),Y)
+    RGB = YIQtoRGB(Y_mod,I,Q)*255
+    return RGB

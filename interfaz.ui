@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(188, 182, 183)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="imgOriginal">
     <property name="geometry">
@@ -25,6 +28,9 @@
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -50,6 +56,9 @@
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255)</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -81,6 +90,9 @@
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(25, 255, 78)</string>
+    </property>
     <property name="text">
      <string>Cargar Imágen</string>
     </property>
@@ -104,6 +116,9 @@
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255)</string>
     </property>
     <item>
      <property name="text">
@@ -183,6 +198,9 @@
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 154, 38)</string>
+    </property>
     <property name="text">
      <string>Aplicar Filtro</string>
     </property>
@@ -208,16 +226,6 @@
      <string>Imágen con filtro</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>630</width>
-     <height>21</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
