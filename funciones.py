@@ -28,16 +28,6 @@ def YIQtoRGB(Y,I,Q):
 
     return np.clip(img,0,1)
 
-# Devuelve la luminancia Y de una imagen en YIQ
-def obtenerLuminancia(img):
-    img = normalizarRGB(img)
-    R = img[:,:,0]
-    G = img[:,:,1]
-    B = img[:,:,2]
-    return (0.299 * R) + (0.587 * G) + (0.114 * B)
-
-#def filtroRaiz(Y):
-#    return np.clip(np.sqrt(Y),0,1)
 
 def filtroRaiz(img):
     Y,I,Q = RGBtoYIQ(img)
@@ -45,8 +35,6 @@ def filtroRaiz(img):
     RGB = YIQtoRGB(Y_mod,I,Q)*255
     return RGB
 
-#def filtroCuadrado(Y):
-#    return np.clip(np.square(Y),0,1)
 
 def filtroCuadrado(img):
     Y,I,Q = RGBtoYIQ(img)
