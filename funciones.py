@@ -36,9 +36,20 @@ def obtenerLuminancia(img):
     B = img[:,:,2]
     return (0.299 * R) + (0.587 * G) + (0.114 * B)
 
-def filtroRaiz(Y):
-    return np.clip(np.sqrt(Y),0,1)
+#def filtroRaiz(Y):
+#    return np.clip(np.sqrt(Y),0,1)
 
-def filtroCuadrado(Y):
-    return np.clip(np.square(Y),0,1)
+def filtroRaiz(img):
+    Y,I,Q = RGBtoYIQ(img)
+    Y_mod = np.clip(np.sqrt(Y),0,1)
+    RGB = YIQtoRGB(Y_mod,I,Q)*255
+    return RGB
 
+#def filtroCuadrado(Y):
+#    return np.clip(np.square(Y),0,1)
+
+def filtroCuadrado(img):
+    Y,I,Q = RGBtoYIQ(img)
+    Y_mod = np.clip(np.square(Y),0,1)
+    RGB = YIQtoRGB(Y_mod,I,Q)*255
+    return RGB
